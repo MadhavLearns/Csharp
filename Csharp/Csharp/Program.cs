@@ -7,7 +7,8 @@ namespace Csharp
     {
         static void Main(string[] args)
         {
-            VariableInitiaization.Run();
+            //VariableInitiaization.Run();
+            OverFlowing.OverFlowTest();
         }
     }
 }

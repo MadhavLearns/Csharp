@@ -21,6 +21,29 @@ namespace Csharp.Variables
 
         public static void Run()
         {
+            //Variable initialization
+            int integer = 1;
+            float floatval = 3.1f;
+            char charcter = 'A';
+            string str = "string";
+
+            Console.WriteLine(integer);
+            Console.WriteLine(floatval);
+            Console.WriteLine(charcter);
+            Console.WriteLine(str);
+
+            //Variable initialization with var keyword
+            var integer1 = 1;
+            var floatval1 = 3.1f;
+            var charcter1 = 'A';
+            var str1 = "string";
+
+            Console.WriteLine(integer1);
+            Console.WriteLine(floatval1);
+            Console.WriteLine(charcter1);
+            Console.WriteLine(str1);
+
+            //testing variable usuage without declaring a value and printing default values
             i = new int();
             int i1 = new int();
             Console.WriteLine("int i1 :" + i1);
