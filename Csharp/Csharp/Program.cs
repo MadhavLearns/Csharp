@@ -1,4 +1,5 @@
-﻿using Csharp.Variables;
+﻿using Csharp.Operators;
+using Csharp.Variables;
 using System;
 
 namespace Csharp
@@ -8,7 +9,9 @@ namespace Csharp
         static void Main(string[] args)
         {
             //VariableInitiaization.Run();
-            OverFlowing.OverFlowTest();
+            //OverFlowing.OverFlowTest();
+            //TypeConversions.Conversions();
+            OperatorsTest.OperatorTest();
         }
     }
 }
