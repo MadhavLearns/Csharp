@@ -1,6 +1,8 @@
 ﻿using Csharp.Arrays;
 using Csharp.Classes;
+using Csharp.Enums;
 using Csharp.Operators;
+using Csharp.Strings;
 using Csharp.Struct;
 using Csharp.Variables;
 using System;
@@ -45,6 +47,14 @@ namespace Csharp
             #region Arrays
             //ArrayTest arrays = new ArrayTest();
             //arrays.TestArrays();
+            #endregion
+            #region strings
+            //StringsTest stringTest = new StringsTest();
+            //stringTest.Strings();
+            #endregion
+            #region Enums
+            EnumTest test = new EnumTest();
+            test.TestEnum();
             #endregion
         }
     }
