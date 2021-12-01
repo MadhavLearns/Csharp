@@ -2,6 +2,7 @@
 using Csharp.Classes;
 using Csharp.Enums;
 using Csharp.Operators;
+using Csharp.RefTypesAndVariableTypes;
 using Csharp.Strings;
 using Csharp.Struct;
 using Csharp.Variables;
@@ -53,8 +54,12 @@ namespace Csharp
             //stringTest.Strings();
             #endregion
             #region Enums
-            EnumTest test = new EnumTest();
-            test.TestEnum();
+            //EnumTest test = new EnumTest();
+            //test.TestEnum();
+            #endregion
+            #region ReferenceTypes and Variable Types
+            RefTest refTest = new RefTest();
+            refTest.TestRefAndVarTypes();
             #endregion
         }
     }
