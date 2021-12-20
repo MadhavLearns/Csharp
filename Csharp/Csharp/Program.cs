@@ -1,5 +1,6 @@
 ﻿using Csharp.Arrays;
 using Csharp.Classes;
+using Csharp.ControlFlowExercises;
 using Csharp.Enums;
 using Csharp.Operators;
 using Csharp.RefTypesAndVariableTypes;
@@ -48,6 +49,8 @@ namespace Csharp
             #region Arrays
             //ArrayTest arrays = new ArrayTest();
             //arrays.TestArrays();
+            ArrayTest1 arrays = new ArrayTest1();
+            arrays.RunProgram();
             #endregion
             #region strings
             //StringsTest stringTest = new StringsTest();
@@ -58,8 +61,19 @@ namespace Csharp
             //test.TestEnum();
             #endregion
             #region ReferenceTypes and Variable Types
-            RefTest refTest = new RefTest();
-            refTest.TestRefAndVarTypes();
+            //RefTest refTest = new RefTest();
+            //refTest.TestRefAndVarTypes();
+            #endregion
+
+            #region ControlFlow
+            //var cf1 = new CF1();
+            //cf1.RunProgram();
+            //var cf2 = new CF2();
+            //cf2.RunProgram();
+            //var cf3 = new CF3();
+            //cf3.RunProgram();
+            //var cf4 = new CF4();
+            //cf4.RunProgram();
             #endregion
         }
     }
