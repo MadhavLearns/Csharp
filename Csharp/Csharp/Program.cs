@@ -8,6 +8,7 @@ using Csharp.Strings;
 using Csharp.Struct;
 using Csharp.Variables;
 using System;
+using System.Collections.Generic;
 using static Csharp.Struct.TestStruct;
 
 namespace Csharp
@@ -49,8 +50,8 @@ namespace Csharp
             #region Arrays
             //ArrayTest arrays = new ArrayTest();
             //arrays.TestArrays();
-            ArrayTest1 arrays = new ArrayTest1();
-            arrays.RunProgram();
+            //ArrayTest1 arrays = new ArrayTest1();
+            //arrays.RunProgram();
             #endregion
             #region strings
             //StringsTest stringTest = new StringsTest();
@@ -75,6 +76,12 @@ namespace Csharp
             //var cf4 = new CF4();
             //cf4.RunProgram();
             #endregion
+
+            #region Read-Only
+            //ReadOnlyTest rd = new ReadOnlyTest();
+            //Console.WriteLine(rd.displayVar());
+            #endregion
+
         }
     }
 }
