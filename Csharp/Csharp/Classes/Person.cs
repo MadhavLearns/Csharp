@@ -8,13 +8,14 @@ namespace Csharp.Classes
 {
     public class Person
     {
-        public string firstName { get; set; }
-        public string lastName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
         public static int Age = 20;
 
         public void Initialize()
         {
-            Console.WriteLine("My Name is "+firstName+" "+lastName);
+            Console.WriteLine("My Name is "+ FirstName+" "+ LastName);
         }
     }
 }

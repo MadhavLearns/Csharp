@@ -22,8 +22,8 @@ namespace Csharp.Arrays
             Console.WriteLine(boolean[2]);
 
             Person[] person = new Person[2];
-            person[0] = new Person() { firstName = "Madhav", lastName = "Sai" };
-            Console.WriteLine(person[0].firstName + " "+person[0].lastName);
+            person[0] = new Person() { FirstName = "Madhav", LastName = "Sai" };
+            Console.WriteLine(person[0].FirstName + " "+person[0].LastName);
             //Console.WriteLine(person[1].firstName + " " + person[1].lastName);
         }
     }
