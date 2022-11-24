@@ -48,16 +48,16 @@ namespace Csharp
             //Console.WriteLine("with object: "+testPerson.firstName + " "+testPerson.lastName);
             #endregion
             #region Arrays
-            //ArrayTest arrays = new ArrayTest();
-            //arrays.TestArrays();
+            ArrayTest arrays = new ArrayTest();
+            arrays.TestArrays();
             //ArrayTest1 arrays = new ArrayTest1();
             //arrays.RunProgram();
             #endregion
             #region strings
             //StringsTest stringTest = new StringsTest();
             //stringTest.Strings();
-            StringMethods sm = new StringMethods();
-            sm.TestMethods();
+            //StringMethods sm = new StringMethods();
+            //sm.TestMethods();
             #endregion
             #region Enums
             //EnumTest test = new EnumTest();
