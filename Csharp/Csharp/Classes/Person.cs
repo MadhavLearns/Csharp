@@ -13,6 +13,26 @@ namespace Csharp.Classes
 
         public static int Age = 20;
 
+        public DateTime BirthDate { get; private set; }
+
+        public int AgeNew
+        {
+            get { var timespan = DateTime.Today - BirthDate;
+                var years = timespan.Days / 365;
+                return years;
+                }
+        }
+
+        public Person()
+        {
+
+        }
+
+        public Person(DateTime datetime)
+        {
+            BirthDate = datetime;
+        }
+
         public void Initialize()
         {
             Console.WriteLine("My Name is "+ FirstName+" "+ LastName);

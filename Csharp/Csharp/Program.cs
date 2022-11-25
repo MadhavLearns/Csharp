@@ -48,8 +48,8 @@ namespace Csharp
             //Console.WriteLine("with object: "+testPerson.firstName + " "+testPerson.lastName);
             #endregion
             #region Arrays
-            ArrayTest arrays = new ArrayTest();
-            arrays.TestArrays();
+            //ArrayTest arrays = new ArrayTest();
+            //arrays.TestArrays();
             //ArrayTest1 arrays = new ArrayTest1();
             //arrays.RunProgram();
             #endregion
@@ -82,6 +82,11 @@ namespace Csharp
             #region Read-Only
             //ReadOnlyTest rd = new ReadOnlyTest();
             //Console.WriteLine(rd.displayVar());
+            #endregion
+
+            #region Properties
+            Person p = new Person(new DateTime(1982,1,1));
+            Console.WriteLine(p.AgeNew);
             #endregion
 
         }
