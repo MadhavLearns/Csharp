@@ -2,6 +2,7 @@
 using Csharp.Classes;
 using Csharp.ControlFlowExercises;
 using Csharp.Enums;
+using Csharp.Event;
 using Csharp.Operators;
 using Csharp.RefTypesAndVariableTypes;
 using Csharp.Strings;
@@ -85,8 +86,18 @@ namespace Csharp
             #endregion
 
             #region Properties
-            Person p = new Person(new DateTime(1982,1,1));
-            Console.WriteLine(p.AgeNew);
+            //Person p = new Person(new DateTime(1982,1,1));
+            //Console.WriteLine(p.AgeNew);
+            #endregion
+
+            #region Events
+            var videoEncoder = new VideoEncoder();
+            var mailService = new MailService();
+            var smsService = new SMSService();
+
+            videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+            videoEncoder.VideoEncoded += smsService.OnVideoEncoded;
+            videoEncoder.Encode();
             #endregion
 
         }
