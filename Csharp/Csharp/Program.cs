@@ -104,7 +104,8 @@ namespace Csharp
             #region Initiliazers
 
             Test test = new Test { number = 20 };
-            Console.WriteLine(test.number);
+            Test test1= new Test(30, 5, "Madhav");
+            Console.WriteLine(test1.number);
             #endregion
 
         }
@@ -115,10 +116,26 @@ namespace Csharp
     public class Test
     {
         public int number;
+        public int id;
+        public string name;
 
         public Test()
         {
             Console.WriteLine("Test Const is executed!!!");
+        }
+
+        public Test(int number) : this()
+        {
+            this.number = number;
+        }
+
+        public Test(int number, int id) : this(number)
+        {
+            this.id = id;
+        }
+        public Test(int number, int id, string name) : this(number,id)
+        {
+            this.name = name;
         }
     }
     #endregion
