@@ -110,6 +110,8 @@ namespace Csharp
         }
     }
 
+
+    #region Initiliazers
     public class Test
     {
         public int number;
@@ -119,4 +121,6 @@ namespace Csharp
             Console.WriteLine("Test Const is executed!!!");
         }
     }
+    #endregion
+
 }
