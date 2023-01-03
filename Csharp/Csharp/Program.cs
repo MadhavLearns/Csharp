@@ -10,6 +10,7 @@ using Csharp.Struct;
 using Csharp.Variables;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using static Csharp.Struct.TestStruct;
 
 namespace Csharp
@@ -91,15 +92,31 @@ namespace Csharp
             #endregion
 
             #region Events
-            var videoEncoder = new VideoEncoder();
-            var mailService = new MailService();
-            var smsService = new SMSService();
+            //var videoEncoder = new VideoEncoder();
+            //var mailService = new MailService();
+            //var smsService = new SMSService();
 
-            videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
-            videoEncoder.VideoEncoded += smsService.OnVideoEncoded;
-            videoEncoder.Encode();
+            //videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+            //videoEncoder.VideoEncoded += smsService.OnVideoEncoded;
+            //videoEncoder.Encode();
             #endregion
 
+            #region Initiliazers
+
+            Test test = new Test { number = 20 };
+            Console.WriteLine(test.number);
+            #endregion
+
+        }
+    }
+
+    public class Test
+    {
+        public int number;
+
+        public Test()
+        {
+            Console.WriteLine("Test Const is executed!!!");
         }
     }
 }

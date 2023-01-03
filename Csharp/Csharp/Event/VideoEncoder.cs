@@ -9,9 +9,11 @@ namespace Csharp.Event
 {
     public class VideoEncoder
     {
-        public delegate void VideoEncoderHandler(object source, EventArgs args);
+        //public delegate void VideoEncoderHandler(object source, EventArgs args);
 
-        public event VideoEncoderHandler VideoEncoded;
+        //public event VideoEncoderHandler VideoEncoded;
+
+        public event EventHandler VideoEncoded;
         public void Encode()
         {
             Console.WriteLine("Video Encoding has started");
