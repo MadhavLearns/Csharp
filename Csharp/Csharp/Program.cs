@@ -5,6 +5,7 @@ using Csharp.Enums;
 using Csharp.Event;
 using Csharp.Operators;
 using Csharp.RefTypesAndVariableTypes;
+using Csharp.RuntimeHelpers;
 using Csharp.Strings;
 using Csharp.Struct;
 using Csharp.Variables;
@@ -56,8 +57,8 @@ namespace Csharp
             //arrays.RunProgram();
             #endregion
             #region strings
-            StringsTest stringTest = new StringsTest();
-            stringTest.Strings();
+            //StringsTest stringTest = new StringsTest();
+            //stringTest.Strings();
             //StringMethods sm = new StringMethods();
             //sm.TestMethods();
             #endregion
@@ -106,6 +107,16 @@ namespace Csharp
             //Test test = new Test { number = 20 };
             //Test test1= new Test(30, 5, "Madhav");
             //Console.WriteLine(test1.number);
+            #endregion
+
+            #region RuntimeHelpers
+            //var calculator = new TaxCalculator("valid_license");
+            //Console.WriteLine(calculator.CalculateVAT(11.99));
+
+
+            ////without calling constructor and bypassing license check
+            //var cal = System.Runtime.CompilerServices.RuntimeHelpers.GetUninitializedObject(typeof (TaxCalculator)) as TaxCalculator;
+            //Console.WriteLine(cal.CalculateVAT(34.64));
             #endregion
 
         }
