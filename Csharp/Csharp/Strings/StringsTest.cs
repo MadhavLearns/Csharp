@@ -13,6 +13,16 @@ namespace Csharp.Strings
             var firstName = "Madhav";
             var lastName = "Sai";
 
+
+            Console.WriteLine("-------------------------------------------------------------");
+            Console.WriteLine("String.Concat Test");
+            List<string> newStrings = new List<string>{"Text ", "is ", "easy ","to ","type" };
+
+            string test = string.Concat(newStrings);
+            Console.WriteLine(test);
+
+            Console.WriteLine("-------------------------------------------------------------");
+
             var fullName = firstName + " " + lastName;
             Console.WriteLine("fullName "+ fullName);
             Console.WriteLine("-----------------------------");

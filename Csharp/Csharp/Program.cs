@@ -56,8 +56,8 @@ namespace Csharp
             //arrays.RunProgram();
             #endregion
             #region strings
-            //StringsTest stringTest = new StringsTest();
-            //stringTest.Strings();
+            StringsTest stringTest = new StringsTest();
+            stringTest.Strings();
             //StringMethods sm = new StringMethods();
             //sm.TestMethods();
             #endregion
@@ -103,9 +103,9 @@ namespace Csharp
 
             #region Initiliazers
 
-            Test test = new Test { number = 20 };
-            Test test1= new Test(30, 5, "Madhav");
-            Console.WriteLine(test1.number);
+            //Test test = new Test { number = 20 };
+            //Test test1= new Test(30, 5, "Madhav");
+            //Console.WriteLine(test1.number);
             #endregion
 
         }
@@ -122,6 +122,11 @@ namespace Csharp
         public Test()
         {
             Console.WriteLine("Test Const is executed!!!");
+        }
+
+        static Test()
+        {
+            Console.WriteLine("Test Static cons");
         }
 
         public Test(int number) : this()
