@@ -18,6 +18,14 @@ namespace Csharp.Variables
         public static decimal dc;
         public static bool bl;
         public static char c;
+        public const int i_const = 10;
+        public static readonly int item;
+
+        static VariableInitiaization()
+        {
+            item = VariableInitiaization.initializer();
+        }
+
 
         public static void Run()
         {
@@ -61,7 +69,17 @@ namespace Csharp.Variables
             Console.WriteLine(a);
             //int b;
             //Console.WriteLine(b);
-            Console.Read();
+            //Console.Read();
+
+            //const vs static-readonly
+            Console.WriteLine("i_const: " + i_const);
+            //item = initializer();
+            Console.WriteLine("item: " + item);
+        }
+
+        public static int initializer()
+        {
+            return 15;
         }
     }
 }

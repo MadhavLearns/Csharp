@@ -149,7 +149,7 @@ namespace Csharp
         {
             this.id = id;
         }
-        public Test(int number, int id, string name) : this(number,id)
+        public Test(int number, int id, string name) : this(number, id)
         {
             this.name = name;
         }
